@@ -24,7 +24,7 @@ def summarize_hf_api(text, max_len=100, min_len=30):
     )
     return summary_text.summary_text
 # Streamlit app
-st.title("PDF Summarizer (Hugging Face InferenceClient)")
+st.title("PDF Summarizer")
 
 pdf_file = st.file_uploader("Upload a PDF", type=["pdf"])
 if pdf_file is not None:
